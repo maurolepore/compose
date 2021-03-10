@@ -3,7 +3,10 @@ services:
   service:
     image: rhub/ubuntu-gcc-release:latest
     container_name: compose
+    environment:
+    - R_LIBS_USER=/rlib
     working_dir: /opt
     volumes:
       - ..:/opt
       - rlib:/rlib
+
