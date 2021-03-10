@@ -1,0 +1,9 @@
+version: "0"
+services:
+  service:
+    image: rhub/ubuntu-gcc-release:latest
+    container_name: compose
+    working_dir: /opt
+    volumes:
+      - ..:/opt
+      - rlib:/rlib
